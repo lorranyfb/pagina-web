@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
     <title>Desenvolvimento Web</title>
 </head>
 <body>
     <section id="inicio">
-        <img src="photo.png" alt="imagem de estudo" width="600px" height="400px" />
+        <img src="photo.png" alt="imagem de estudo"/>
         <div class="content">
             <h class="title">Curso de Introdução Desenvolvimento Web</h>
-            <h2 class="subtitle">Bem vindo, João!</h2>
+            <h2 class="subtitle" id="result"></h2>
         </div>
-        <input placeholder="Seu nome" name="name" id="name"/>
-        <button class="primary">Entrar</button>
-        <button class="secundary">Sair</button>
+        <input type="text" placeholder="Seu nome" name="name" id="name"/>
+        <button class="primary" onclick="getValue()">Entrar</button>
+        <button class="secundary" onclick ="removeValue()">Sair</button>
     </section>
+    <script src="index.js"></script>
 </body>
 </html>
